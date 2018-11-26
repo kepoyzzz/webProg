@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import { Navbar, Nav, NavDropdown, NavItem, MenuItem, Image} from 'react-bootstrap'
 import { bootstrapUtils } from 'react-bootstrap/lib/utils';
 
@@ -23,11 +23,11 @@ class Header extends Component {
         }
 
         return (
-            <div className="Header" >
+            <div>
                 <Navbar inverse collapseOnSelect style={navbarStyles}>
                     <Navbar.Header>
                         <Navbar.Brand style={logoStyles}>
-                            <Image src="./images/logo.png" weign="40" height="40" />;
+                            <Image src="./images/logo.png" weign="50" height="50" />
                         </Navbar.Brand>
                         <Navbar.Brand>
                             <a href="#brand" style={navbarLinkStyles}>Help-Out</a>
@@ -42,30 +42,21 @@ class Header extends Component {
                             <NavItem eventKey={2} href="#">
                                 <Navbar.Link href="#" style={navbarLinkStyles}>Donation</Navbar.Link>
                             </NavItem>
-
-                            {/* <NavDropdown eventKey={3} title="Dropdown" id="basic-nav-dropdown">
-                                <MenuItem eventKey={3.1}>Action</MenuItem>
-                                <MenuItem eventKey={3.2}>Another action</MenuItem>
-                                <MenuItem eventKey={3.3}>Something else here</MenuItem>
-                                <MenuItem divider />
-                                <MenuItem eventKey={3.3}>Separated link</MenuItem>
-                            </NavDropdown> */}
                         </Nav>
                         <Nav pullRight>
                             <Navbar.Text style={navbarLinkStyles}>
-                                Signed in as: <Navbar.Link href="#" style={navbarLinkStyles}>Mark Otto</Navbar.Link>
+                                <Navbar.Link href="#" style={navbarLinkStyles}>Mark Otto</Navbar.Link>
                             </Navbar.Text >
-                            <Navbar.Text style={navbarLinkStyles}>Have a great day!</Navbar.Text>
                             <NavItem eventKey={1} href="#">
                                 <Navbar.Link href="#" style={navbarLinkStyles}>Sign Out</Navbar.Link>
                             </NavItem>
                         </Nav>
                     </Navbar.Collapse>
-                </Navbar>;
+                </Navbar>
             </div>
 
         );
     }
 }
 
-export default Header;
+export default Header

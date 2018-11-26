@@ -1,0 +1,20 @@
+.body{
+    background-color: burlywood;
+    color: black;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.show-grid{
+    padding-top: 2%;
+}
+
+.images-show-grid{
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.panel-text{
+    text-align: center;
+}

@@ -9,6 +9,9 @@
     <title>Help-Out</title>
         <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/mainBody.css') }}" rel="stylesheet">     
+    <!-- Latest compiled and minified CSS -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 </head>
 <body>
     <div id="app"></div>
